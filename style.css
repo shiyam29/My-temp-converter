@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #020d45;
+    background: linear-gradient(90deg, #c3b713 0%, #362a84 100%);
+    font-family: monospace, sans-serif;
+    color: #0d5370;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    border-color: rgba(156, 8, 255, 0.998) #fafa03;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 32px;
+    color:#f8f8ff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+  background: #222 ;
+  border-color: rgba(156, 8, 255, 0.998) #fafa03;
+  outline: none;
+  border-radius: 20px;
+
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+    margin-right: 10px;
+    margin-left:10px ;
+    border-radius: 30px;
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
+    outline: none;
+    background: #222 ;
+    border-color: rgba(156, 8, 255, 0.998) #fafa03;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    left: -0px;
+}
+
+input::placeholder {
+    color: rgb(254, 254, 254);
+    align-items: left;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
